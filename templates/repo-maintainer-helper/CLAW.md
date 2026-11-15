@@ -91,6 +91,7 @@ Keeps a small set of GitHub repositories the owner maintains under control. Each
 
 ## Read before you add it
 
+- Untrusted text: the model reads issue and PR titles (up to 1000 characters), descriptions (up to 3000 characters per item shown), label names, and the titles the duplicate search returns, because sorting new issues and drafting replies needs them. It never reaches a command line, never chooses which command runs (the database builds every GitHub write from checked values), cannot cause a write without the owner's OK for the exact command, and any instructions in it are ignored.
 - Needs on the Gateway host: `gh` logged in to GitHub with access to the repos, Node 22 or newer, and sqlite3 3.38 or newer with FTS5 (the stock macOS and most Linux builds have it).
 - Reads use the owner's own `gh` login. That login can do anything the owner can do, so the limits below are this agent's rules plus OpenClaw's exec approval prompt, not a sandbox. Setup sets exec to `ask` so every command it has not been allowed waits for the owner's OK.
 - The daily automation is installed paused. Setup runs one pass by hand, shows the digest, then asks the owner to turn it on.

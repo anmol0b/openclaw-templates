@@ -9,3 +9,4 @@ First version.
 - Suggested labels come only from the repository's own label list. Replies are drafted to files, never put on a command line.
 - Every GitHub write is an owner approval in chat for a command the database builds itself, bound to the item as the owner saw it and, for a reply, to the exact draft bytes. Used once.
 - The first read of a repository triages only the last `backlog_days`. The digest names reads that may have missed changes.
+- README and CLAW.md list exactly which issue and PR text reaches the model, its caps, and why it cannot cause a write.

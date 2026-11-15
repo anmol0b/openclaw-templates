@@ -1,0 +1,11 @@
+﻿test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234560Z ##[group]Run make test
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234561Z ##[debug]Added matchers: 'go'. Problem matchers scan action output for known warning or error strings.
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234562Z ^[[1m^[[33mwarning^[[0m: Cargo.toml: `panic` setting is ignored for `bench` profile
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234563Z go test ./...
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234564Z ok   example/cli  0.112s
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234565Z [31m--- FAIL: TestParseConfig (0.01s)[0m
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234566Z ^[[1m^[[31mFAIL^[[0m: parser suite
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234567Z     config_test.go:41: unexpected token at line 3
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234568Z FAIL example/parser 0.131s
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234569Z ##[error]Process completed with exit code 1.
+test (ubuntu-latest)	UNKNOWN STEP	2026-11-10T09:00:00.1234570Z Cleaning up orphan processes

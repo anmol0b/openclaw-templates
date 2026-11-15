@@ -1,0 +1,77 @@
+[
+ {
+  "run_id": 1002,
+  "attempt": 1,
+  "job_id": 5101,
+  "job_name": "test (ubuntu-latest)",
+  "job_url": "https://github.com/example-org/example-repo/actions/runs/1/job/5101",
+  "failed_steps": [
+   "Run make test"
+  ],
+  "error_lines": [
+   "--- FAIL: TestParseConfig (0.01s)",
+   "FAIL: parser suite",
+   "FAIL example/parser 0.131s",
+   "##[error]Process completed with exit code 1."
+  ],
+  "excerpt": "go test ./...\nok   example/cli  0.112s\n--- FAIL: TestParseConfig (0.01s)\nFAIL: parser suite\n    config_test.go:41: unexpected token at line 3\nFAIL example/parser 0.131s\n##[error]Process completed with exit code 1.\nCleaning up orphan processes",
+  "log_found": true,
+  "signature": "9e88daa901e1324c",
+  "log_error": ""
+ },
+ {
+  "run_id": 1003,
+  "attempt": 1,
+  "job_id": 5201,
+  "job_name": "test (ubuntu-latest)",
+  "job_url": "https://github.com/example-org/example-repo/actions/runs/1/job/5201",
+  "failed_steps": [
+   "Run make test"
+  ],
+  "error_lines": [
+   "--- FAIL: TestParseConfig (0.02s)",
+   "FAIL: parser suite",
+   "FAIL example/parser 0.231s",
+   "##[error]Process completed with exit code 1."
+  ],
+  "excerpt": "go test ./...\nok   example/cli  0.212s\n--- FAIL: TestParseConfig (0.02s)\nFAIL: parser suite\n    config_test.go:42: unexpected token at line 3\nFAIL example/parser 0.231s\n##[error]Process completed with exit code 1.\nCleaning up orphan processes",
+  "log_found": true,
+  "signature": "9e88daa901e1324c",
+  "log_error": ""
+ },
+ {
+  "run_id": 2001,
+  "attempt": 1,
+  "job_id": 5301,
+  "job_name": "lint",
+  "job_url": "https://github.com/example-org/example-repo/actions/runs/1/job/5301",
+  "failed_steps": [
+   "Run golangci-lint"
+  ],
+  "error_lines": [
+   "main.go:12: error: unused variable count",
+   "##[error]Process completed with exit code 2."
+  ],
+  "excerpt": "Run golangci-lint\nmain.go:12: error: unused variable count\n##[error]Process completed with exit code 2.",
+  "log_found": true,
+  "signature": "baf83ffe4b724a7b",
+  "log_error": ""
+ },
+ {
+  "run_id": 3001,
+  "attempt": 1,
+  "job_id": 9002,
+  "job_name": "e2e (macos)",
+  "job_url": "https://github.com/example-org/example-repo/actions/runs/1/job/9002",
+  "failed_steps": [
+   "Run e2e"
+  ],
+  "error_lines": [
+   "##[error]The job running on runner example-runner has exceeded the maximum execution time of 60 minutes."
+  ],
+  "excerpt": "Waiting for server on :8080\n##[error]The job running on runner example-runner has exceeded the maximum execution time of 60 minutes.",
+  "log_found": true,
+  "signature": "7696b81a9d76ec33",
+  "log_error": ""
+ }
+]

@@ -1,0 +1,351 @@
+{
+ "data": {
+  "repository": {
+   "refs": {
+    "totalCount": 15,
+    "nodes": [
+     {
+      "name": "main",
+      "branchProtectionRule": {
+       "pattern": "main"
+      },
+      "target": {
+       "oid": "000003e8000003e8000003e8000003e8000003e8",
+       "committedDate": "2026-10-01T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "feature/merged-old",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003e9000003e9000003e9000003e9000003e9",
+       "committedDate": "2026-08-02T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "fix/squash-merged",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003ea000003ea000003ea000003ea000003ea",
+       "committedDate": "2026-08-17T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": [
+        {
+         "number": 101,
+         "state": "MERGED",
+         "headRefOid": "000003ea000003ea000003ea000003ea000003ea",
+         "url": "https://github.com/example-org/example-repo/pull/101"
+        }
+       ]
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 3,
+       "status": "DIVERGED"
+      }
+     },
+     {
+      "name": "fix/squash-moved",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003eb000003eb000003eb000003eb000003eb",
+       "committedDate": "2026-08-17T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": [
+        {
+         "number": 102,
+         "state": "MERGED",
+         "headRefOid": "0000270f0000270f0000270f0000270f0000270f",
+         "url": "https://github.com/example-org/example-repo/pull/102"
+        }
+       ]
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 3,
+       "status": "DIVERGED"
+      }
+     },
+     {
+      "name": "wip/unmerged",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003ec000003ec000003ec000003ec000003ec",
+       "committedDate": "2026-08-22T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 5,
+       "status": "DIVERGED"
+      }
+     },
+     {
+      "name": "feature/with-open-pr",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003ed000003ed000003ed000003ed000003ed",
+       "committedDate": "2026-08-12T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": [
+        {
+         "number": 103,
+         "state": "OPEN",
+         "headRefOid": "000003ed000003ed000003ed000003ed000003ed",
+         "url": "https://github.com/example-org/example-repo/pull/103"
+        }
+       ]
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 2,
+       "status": "DIVERGED"
+      }
+     },
+     {
+      "name": "release/protected-merged",
+      "branchProtectionRule": {
+       "pattern": "release/protected-merged"
+      },
+      "target": {
+       "oid": "000003ee000003ee000003ee000003ee000003ee",
+       "committedDate": "2026-07-03T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "teammate/merged",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003ef000003ef000003ef000003ef000003ef",
+       "committedDate": "2026-07-23T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-teammate"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "feature/fresh-merged",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003f0000003f0000003f0000003f0000003f0",
+       "committedDate": "2026-10-01T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "bad name;rm -rf",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003f1000003f1000003f1000003f1000003f1",
+       "committedDate": "2026-07-13T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "-starts-dash",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003f2000003f2000003f2000003f2000003f2",
+       "committedDate": "2026-07-13T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "a/../b",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003f3000003f3000003f3000003f3000003f3",
+       "committedDate": "2026-07-13T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "ends.lock",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003f4000003f4000003f4000003f4000003f4",
+       "committedDate": "2026-07-13T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "has space",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003f5000003f5000003f5000003f5000003f5",
+       "committedDate": "2026-07-13T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     },
+     {
+      "name": "quote'name",
+      "branchProtectionRule": null,
+      "target": {
+       "oid": "000003f6000003f6000003f6000003f6000003f6",
+       "committedDate": "2026-07-13T12:00:00Z",
+       "author": {
+        "user": {
+         "login": "example-owner"
+        }
+       }
+      },
+      "associatedPullRequests": {
+       "nodes": []
+      },
+      "compare": {
+       "aheadBy": 3,
+       "behindBy": 0,
+       "status": "AHEAD"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

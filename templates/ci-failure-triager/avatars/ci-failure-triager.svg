@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="CI Failure Triager">
+  <rect width="128" height="128" rx="28" fill="#2b2140"/>
+  <circle cx="64" cy="64" r="38" fill="#f4f2fa"/>
+  <path d="M44 64h14l6-14 8 28 6-14h6" fill="none" stroke="#d9534f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

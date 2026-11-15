@@ -1,0 +1,597 @@
+[
+ {
+  "author": {
+   "id": "U_0",
+   "is_bot": false,
+   "login": "user-0",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #900",
+  "labels": [],
+  "mergedAt": "2026-11-13T01:24:58Z",
+  "number": 1200,
+  "title": "feat: add --json output to export",
+  "url": "https://github.com/example-org/example-repo/pull/1200"
+ },
+ {
+  "author": {
+   "id": "U_1",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #901",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-13T08:24:58Z",
+  "number": 1201,
+  "title": "chore(deps): bump example-dep-1 from 1.0.1 to 1.0.2",
+  "url": "https://github.com/example-org/example-repo/pull/1201"
+ },
+ {
+  "author": {
+   "id": "U_2",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #902",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-13T15:24:58Z",
+  "number": 1202,
+  "title": "chore(deps): bump example-dep-2 from 1.0.2 to 1.0.3",
+  "url": "https://github.com/example-org/example-repo/pull/1202"
+ },
+ {
+  "author": {
+   "id": "U_3",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #903",
+  "labels": [],
+  "mergedAt": "2026-11-13T22:24:58Z",
+  "number": 1203,
+  "title": "chore(deps): bump example-dep-3 from 1.0.3 to 1.0.4",
+  "url": "https://github.com/example-org/example-repo/pull/1203"
+ },
+ {
+  "author": {
+   "id": "U_4",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #904",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-14T05:24:58Z",
+  "number": 1204,
+  "title": "chore(deps): bump example-dep-4 from 1.0.4 to 1.0.5",
+  "url": "https://github.com/example-org/example-repo/pull/1204"
+ },
+ {
+  "author": {
+   "id": "U_5",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #905",
+  "labels": [],
+  "mergedAt": "2026-11-14T12:24:58Z",
+  "number": 1205,
+  "title": "chore(deps): bump example-dep-5 from 1.0.5 to 1.0.6",
+  "url": "https://github.com/example-org/example-repo/pull/1205"
+ },
+ {
+  "author": {
+   "id": "U_6",
+   "is_bot": false,
+   "login": "user-6",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #906",
+  "labels": [],
+  "mergedAt": "2026-11-14T19:24:58Z",
+  "number": 1206,
+  "title": "fix(cli): handle empty theme file",
+  "url": "https://github.com/example-org/example-repo/pull/1206"
+ },
+ {
+  "author": {
+   "id": "U_7",
+   "is_bot": false,
+   "login": "user-0",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #907",
+  "labels": [],
+  "mergedAt": "2026-11-15T02:24:58Z",
+  "number": 1207,
+  "title": "refactor: split the upload module",
+  "url": "https://github.com/example-org/example-repo/pull/1207"
+ },
+ {
+  "author": {
+   "id": "U_8",
+   "is_bot": false,
+   "login": "user-1",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #908",
+  "labels": [],
+  "mergedAt": "2026-11-15T09:24:58Z",
+  "number": 1208,
+  "title": "ci: run tests on arm64",
+  "url": "https://github.com/example-org/example-repo/pull/1208"
+ },
+ {
+  "author": {
+   "id": "U_9",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #909",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-15T16:24:58Z",
+  "number": 1209,
+  "title": "chore(deps): bump example-dep-9 from 1.0.9 to 1.0.10",
+  "url": "https://github.com/example-org/example-repo/pull/1209"
+ },
+ {
+  "author": {
+   "id": "U_10",
+   "is_bot": false,
+   "login": "user-3",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #910",
+  "labels": [],
+  "mergedAt": "2026-11-15T23:24:58Z",
+  "number": 1210,
+  "title": "test: cover retry backoff",
+  "url": "https://github.com/example-org/example-repo/pull/1210"
+ },
+ {
+  "author": {
+   "id": "U_11",
+   "is_bot": false,
+   "login": "user-4",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #911",
+  "labels": [],
+  "mergedAt": "2026-11-16T06:24:58Z",
+  "number": 1211,
+  "title": "build: update toolchain",
+  "url": "https://github.com/example-org/example-repo/pull/1211"
+ },
+ {
+  "author": {
+   "id": "U_12",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #912",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "github_actions",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-16T13:24:58Z",
+  "number": 1212,
+  "title": "chore(deps): bump example-dep-12 from 1.0.12 to 1.0.13",
+  "url": "https://github.com/example-org/example-repo/pull/1212"
+ },
+ {
+  "author": {
+   "id": "U_13",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #913",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-16T20:24:58Z",
+  "number": 1213,
+  "title": "chore(deps): bump example-dep-13 from 1.0.13 to 1.0.14",
+  "url": "https://github.com/example-org/example-repo/pull/1213"
+ },
+ {
+  "author": {
+   "id": "U_14",
+   "is_bot": false,
+   "login": "user-0",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #914",
+  "labels": [],
+  "mergedAt": "2026-11-17T03:24:58Z",
+  "number": 1214,
+  "title": "docs: explain cache flags",
+  "url": "https://github.com/example-org/example-repo/pull/1214"
+ },
+ {
+  "author": {
+   "id": "U_15",
+   "is_bot": false,
+   "login": "user-1",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #915",
+  "labels": [],
+  "mergedAt": "2026-11-17T10:24:58Z",
+  "number": 1215,
+  "title": "chore(deps): bump example-lib from 1.2.0 to 1.3.0",
+  "url": "https://github.com/example-org/example-repo/pull/1215"
+ },
+ {
+  "author": {
+   "id": "U_16",
+   "is_bot": false,
+   "login": "user-2",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #916",
+  "labels": [],
+  "mergedAt": "2026-11-17T17:24:58Z",
+  "number": 1216,
+  "title": "Speed up config loading",
+  "url": "https://github.com/example-org/example-repo/pull/1216"
+ },
+ {
+  "author": {
+   "id": "U_17",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #917",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-18T00:24:58Z",
+  "number": 1217,
+  "title": "chore(deps): bump example-dep-17 from 1.0.17 to 1.0.18",
+  "url": "https://github.com/example-org/example-repo/pull/1217"
+ },
+ {
+  "author": {
+   "id": "U_18",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #918",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-18T07:24:58Z",
+  "number": 1218,
+  "title": "chore(deps): bump example-dep-18 from 1.0.18 to 1.0.19",
+  "url": "https://github.com/example-org/example-repo/pull/1218"
+ },
+ {
+  "author": {
+   "id": "U_19",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #919",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-18T14:24:58Z",
+  "number": 1219,
+  "title": "chore(deps): bump example-dep-19 from 1.0.19 to 1.0.20",
+  "url": "https://github.com/example-org/example-repo/pull/1219"
+ },
+ {
+  "author": {
+   "id": "U_20",
+   "is_bot": false,
+   "login": "user-6",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #920",
+  "labels": [],
+  "mergedAt": "2026-11-18T21:24:58Z",
+  "number": 1220,
+  "title": "ci: run tests on arm64",
+  "url": "https://github.com/example-org/example-repo/pull/1220"
+ },
+ {
+  "author": {
+   "id": "U_21",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #921",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "go",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-19T04:24:58Z",
+  "number": 1221,
+  "title": "chore(deps): bump example-dep-21 from 1.0.21 to 1.0.22",
+  "url": "https://github.com/example-org/example-repo/pull/1221"
+ },
+ {
+  "author": {
+   "id": "U_22",
+   "is_bot": false,
+   "login": "user-1",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #922",
+  "labels": [],
+  "mergedAt": "2026-11-19T11:24:58Z",
+  "number": 1222,
+  "title": "test: cover retry backoff",
+  "url": "https://github.com/example-org/example-repo/pull/1222"
+ },
+ {
+  "author": {
+   "id": "U_23",
+   "is_bot": false,
+   "login": "user-2",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #923",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "needs-triage",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "external",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_2",
+    "name": "ready-for-review",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-19T18:24:58Z",
+  "number": 1223,
+  "title": "build: update toolchain",
+  "url": "https://github.com/example-org/example-repo/pull/1223"
+ },
+ {
+  "author": {
+   "id": "U_24",
+   "is_bot": false,
+   "login": "user-3",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #924",
+  "labels": [],
+  "mergedAt": "2026-11-20T01:24:58Z",
+  "number": 1224,
+  "title": "feat: add --json output to export",
+  "url": "https://github.com/example-org/example-repo/pull/1224"
+ },
+ {
+  "author": {
+   "id": "U_25",
+   "is_bot": false,
+   "login": "user-4",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #925",
+  "labels": [],
+  "mergedAt": "2026-11-20T08:24:58Z",
+  "number": 1225,
+  "title": "fix: retry upload when the proxy drops",
+  "url": "https://github.com/example-org/example-repo/pull/1225"
+ },
+ {
+  "author": {
+   "id": "U_26",
+   "is_bot": false,
+   "login": "user-5",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #926",
+  "labels": [],
+  "mergedAt": "2026-11-20T15:24:58Z",
+  "number": 1226,
+  "title": "docs: explain cache flags",
+  "url": "https://github.com/example-org/example-repo/pull/1226"
+ },
+ {
+  "author": {
+   "id": "U_27",
+   "is_bot": true,
+   "login": "app/example-bot",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #927",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "dependencies",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "github_actions",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-20T22:24:58Z",
+  "number": 1227,
+  "title": "chore(deps): bump example-dep-27 from 1.0.27 to 1.0.28",
+  "url": "https://github.com/example-org/example-repo/pull/1227"
+ },
+ {
+  "author": {
+   "id": "U_28",
+   "is_bot": false,
+   "login": "user-0",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #928",
+  "labels": [
+   {
+    "id": "LA_0",
+    "name": "needs-triage",
+    "description": "",
+    "color": "ededed"
+   },
+   {
+    "id": "LA_1",
+    "name": "external",
+    "description": "",
+    "color": "ededed"
+   }
+  ],
+  "mergedAt": "2026-11-21T05:24:58Z",
+  "number": 1228,
+  "title": "Speed up config loading",
+  "url": "https://github.com/example-org/example-repo/pull/1228"
+ },
+ {
+  "author": {
+   "id": "U_29",
+   "is_bot": false,
+   "login": "user-1",
+   "name": ""
+  },
+  "body": "Summary of the change.\n\nCloses #929",
+  "labels": [],
+  "mergedAt": "2026-11-21T12:24:58Z",
+  "number": 1229,
+  "title": "feat(api)!: rename the list endpoint",
+  "url": "https://github.com/example-org/example-repo/pull/1229"
+ }
+]

@@ -37,6 +37,21 @@ These are the agent's rules plus OpenClaw's approval prompt. The agent uses your
 
 Merge, approve or review PRs, assign people, remove labels, edit titles or bodies, lock, transfer or delete anything, @-mention anyone, promise fixes or dates, or reply publicly to something that looks like a security report.
 
+## Untrusted text
+
+Anyone who can open an issue or pull request can write text this agent reads. This is exactly what reaches the model:
+
+| Source | What the model sees | Cap | Why |
+|--------|---------------------|-----|-----|
+| Issue and PR titles | the title | 1000 characters | to sort the item and find duplicates |
+| Issue and PR descriptions | the start of the description | 3000 characters per item | to tell a bug with steps from one missing details |
+| Label names | names from the repo's label list | 100 characters each | to suggest labels that exist |
+| Duplicate matches | titles of similar issues | 8 matches | to point to an existing issue |
+
+- None of this text ever reaches a command line. GitHub is read with one fixed command per repository, and every write command is built by the database from checked values (numbers, names from fixed lists, file paths it chooses), never from text the model read.
+- Text cannot cause a write. Every write is a request you approve in chat for the exact command, and a scheduled run never writes.
+- The agent's instructions tell it to treat this text as data and ignore any instructions in it. Sizes are capped when the text is stored, so one item cannot flood the model.
+
 ## Requirements
 
 - OpenClaw with Templates turned on (**Settings → Labs**, or `gateway.controlUi.experimental.templates` set to `true` on a headless install).

@@ -1,0 +1,2 @@
+﻿e2e (macos)	UNKNOWN STEP	2026-11-10T10:30:00.1234560Z Waiting for server on :8080
+e2e (macos)	UNKNOWN STEP	2026-11-10T10:30:00.1234561Z ##[error]The job running on runner example-runner has exceeded the maximum execution time of 60 minutes.

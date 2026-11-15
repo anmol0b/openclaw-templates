@@ -1,0 +1,3 @@
+﻿lint	UNKNOWN STEP	2026-11-10T09:10:00.1234560Z Run golangci-lint
+lint	UNKNOWN STEP	2026-11-10T09:10:00.1234561Z main.go:12: error: unused variable count
+lint	UNKNOWN STEP	2026-11-10T09:10:00.1234562Z ##[error]Process completed with exit code 2.

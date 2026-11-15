@@ -1,0 +1,11 @@
+{
+  "name": "@anmol0b/stale-work-sweeper",
+  "version": "0.1.0",
+  "description": "Finds your own stale branches, idle PRs and forgotten assigned issues across your repos, and sends a weekly cleanup list, safest first. Nothing changes on GitHub until you OK the exact command.",
+  "author": "Anmol Bhardwaj",
+  "license": "MIT",
+  "type": "module",
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}
