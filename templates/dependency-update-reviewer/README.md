@@ -9,7 +9,7 @@ Dependency updates 2026-11-16: 3 looks safe, 5 needs a look, 1 blocked by CI.
 
 Looks safe
 - [21] example-org/example-repo#201 example-cli 4.5.5 → 4.5.6 (patch, npm): Bug fixes only, CI green.
-  Would run: gh pr review 201 --repo example-org/example-repo --approve
+  Would run: gh api -X POST repos/example-org/example-repo/pulls/201/reviews -f event=APPROVE -f commit_id=<the full commit SHA you reviewed> --jq .commit_id
 
 Needs a look
 - example-org/example-repo#102 example-http 2.4.1 → 3.0.0: major-bump, breaking-note. The default timeout changed in 3.0; check callers that rely on it.
@@ -35,7 +35,7 @@ Reply "approve <id>", "approve all safe", or "no <id>".
 
 - Every write (approve, comment, `@dependabot rebase` or `recreate`) is its own request with the exact command shown. The database builds the command; the agent cannot change it after you saw it.
 - A request is tied to the PR's head commit and update time as you saw them. If the bot pushes again, the request is refused and the PR is reviewed again.
-- Approve needs a looks-safe review of the current head and passing CI, checked again right before it runs.
+- Approve needs a looks-safe review of the current head and passing CI, checked again right before it runs. The approval is pinned to that exact commit through GitHub's `commit_id`, so if the bot pushes again in between, the new commit does not get your approval. The agent then checks the review landed on that commit.
 - A comment is tied to the exact text of its draft file. Each approval is used once.
 - Scheduled runs never write to GitHub.
 - Setup sets this agent's exec mode to `ask`, so OpenClaw prompts you for every command you have not allowed. You allow the read commands once; write commands prompt every time.

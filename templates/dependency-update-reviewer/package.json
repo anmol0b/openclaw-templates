@@ -1,6 +1,6 @@
 {
   "name": "@anmol0b/dependency-update-reviewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Reviews open Dependabot and Renovate PRs on the repos you list, flags major bumps, breaking notes and red CI, and sorts them into looks safe, needs a look, and blocked by CI. Never merges; approvals and comments wait for your OK.",
   "author": "Anmol Bhardwaj",
   "license": "MIT",

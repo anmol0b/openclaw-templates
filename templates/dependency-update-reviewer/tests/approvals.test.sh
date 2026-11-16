@@ -21,7 +21,8 @@ out() { step approval-outcome '{"step":"approval-outcome","approval_id":'$1',"ou
 # approve: only with a looks-safe review of this head and passing CI.
 ask 101 approve; expect_refused approve_needs_a_looks_safe_review_of_this_head "approve needs a review first"
 review 101 looks-safe; expect_rc0 "setup: review 101 as looks-safe"
-ask 101 approve; expect_has "approve builds the exact command" "\"exact_step\":\"gh pr review 101 --repo $R --approve\""
+H101="$(sqlite3 "$DB" "SELECT head_sha FROM prs WHERE number=101;")"
+ask 101 approve; expect_has "approve pins the review to the reviewed commit" "\"exact_step\":\"gh api -X POST repos/$R/pulls/101/reviews -f event=APPROVE -f commit_id=$H101 --jq .commit_id\""
 A1="$(aid)"
 ask 101 approve; expect_fail "one open request per PR and action"
 review 106 blocked-by-ci; ask 106 approve; expect_refused approve_needs_a_looks_safe_review_of_this_head "approve is refused for a PR that is not looks-safe"
@@ -57,9 +58,9 @@ dec $A1 refused ',"owner_words":"no"'; expect_refused request_unknown_or_already
 q "UPDATE approvals SET exact_step = 'gh pr merge 101 --repo $R --admin' WHERE id=$A1;"; expect_fail "a request cannot be rewritten"
 
 # use-approval
-APPROVE="gh pr review 101 --repo $R --approve"
+APPROVE="gh api -X POST repos/$R/pulls/101/reviews -f event=APPROVE -f commit_id=$H101 --jq .commit_id"
 use $A_BOT "gh pr comment 105 --repo $R --body '@dependabot rebase'"; expect_refused approval_not_granted_or_already_used "use refuses a request that was not granted"
-use $A1 "gh pr review 101 --repo $R --approve --body x"; expect_refused not_the_approved_command "use refuses a different command"
+use $A1 "gh api -X POST repos/$R/pulls/101/reviews -f event=APPROVE --jq .commit_id"; expect_refused not_the_approved_command "use refuses a different command"
 q "UPDATE prs SET last_seen = strftime('%Y-%m-%dT%H:%M:%SZ','now','-11 minutes') WHERE number=101;"
 use $A1 "$APPROVE"; expect_refused fetch_again_first "use needs a fetch from the last 10 minutes"
 # The bot pushes a new head after the owner said yes.
@@ -87,10 +88,25 @@ use $A_C2 "gh pr comment 201 --repo $R --body-file $DRAFT2"; expect_refused appr
 
 # CI that turns red after a grant blocks approve.
 review 201 looks-safe; ask 201 approve; A_AP2="$(aid)"
+H201="$(sqlite3 "$DB" "SELECT head_sha FROM prs WHERE number=201;")"
+AP201="gh api -X POST repos/$R/pulls/201/reviews -f event=APPROVE -f commit_id=$H201 --jq .commit_id"
 dec $A_AP2 granted ',"owner_words":"approve"'
 q "UPDATE prs SET ci='failing' WHERE number=201;"
-use $A_AP2 "gh pr review 201 --repo $R --approve"; expect_refused ci_not_passing "use refuses approve when CI turned red"
+use $A_AP2 "$AP201"; expect_refused ci_not_passing "use refuses approve when CI turned red"
 refetch
+
+# The race ClawScan named: the bot pushes after use-approval passed, before the command runs.
+# The command is pinned to the reviewed commit, and the outcome must show the review landed there.
+review 201 looks-safe; ask 201 approve; A_AP3="$(aid)"
+dec $A_AP3 granted ',"owner_words":"approve it"'
+use $A_AP3 "$AP201"; expect_has "use accepts the pinned approve" '"used_at":"'
+edit_served dependabot 'a.map(x=>x.number===201?{...x,headRefOid:"f".repeat(40)}:x)'
+refetch
+q "SELECT exact_step FROM approvals WHERE id=$A_AP3;"; expect_eq "after a new push the command still names the reviewed commit" "$AP201"
+out $A_AP3 done ',"review_commit_id":"'$(printf 'f%.0s' {1..40})'"'; expect_refused review_not_on_the_approved_commit "done refuses a review on another commit"
+out $A_AP3 done; expect_refused review_not_on_the_approved_commit "done for approve needs the commit the command printed"
+out $A_AP3 done ',"review_commit_id":"'$H201'"'; expect_has "done accepts a review on the approved commit" '"outcome":"done"'
+serve "$FIXTURES/example"; refetch
 
 use $A_BOT "gh pr comment 105 --repo $R --body '@dependabot rebase'"; expect_has "a granted bot command is usable" '"used_at":"'
 

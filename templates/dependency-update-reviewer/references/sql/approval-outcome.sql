@@ -1,4 +1,5 @@
--- Record what happened after a used approval. Input: approval_id, outcome (done or failed), note (the exact error line when it failed).
+-- Record what happened after a used approval. Input: approval_id, outcome (done or failed), note (the exact error line when it failed),
+-- review_commit_id (approve only: the commit the command printed). done for approve is refused unless the review landed on the approved commit.
 -- For done: fetch and ingest the repository again first, so the record shows the PR after the write.
 -- Run from the workspace root:
 --   sqlite3 -bail -json <db_path> ".read references/sql/approval-outcome.sql"
@@ -21,6 +22,10 @@ CREATE TEMP TABLE g2 (ok INTEGER CONSTRAINT outcome_not_done_or_failed CHECK (ok
 INSERT INTO temp.g2 SELECT json_extract(j, '$.outcome') IN ('done', 'failed') FROM temp.input;
 CREATE TEMP TABLE g3 (ok INTEGER CONSTRAINT fetch_again_after_the_write CHECK (ok = 1));
 INSERT INTO temp.g3 SELECT json_extract(i.j, '$.outcome') = 'failed' OR a.last_seen >= a.used_at FROM temp.input AS i, temp.a AS a;
+CREATE TEMP TABLE g4 (ok INTEGER CONSTRAINT review_not_on_the_approved_commit CHECK (ok = 1));
+INSERT INTO temp.g4 SELECT a.action <> 'approve' OR json_extract(i.j, '$.outcome') = 'failed'
+       OR coalesce(json_extract(i.j, '$.review_commit_id'), '') = a.seen_head_sha
+FROM temp.input AS i, temp.a AS a;
 
 UPDATE approvals SET
   outcome = (SELECT json_extract(j, '$.outcome') FROM temp.input),

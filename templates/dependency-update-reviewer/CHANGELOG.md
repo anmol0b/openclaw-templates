@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Fix: an approval is pinned to the exact commit you reviewed. The approve command now posts the review through GitHub's reviews API with `commit_id` set to that commit (`gh api -X POST repos/<repo>/pulls/<n>/reviews -f event=APPROVE -f commit_id=<sha>`). Before, `gh pr review --approve` approved whatever the head was when it ran, so a bot push between the final check and the command could receive your approval. ClawScan flagged this in 0.1.0.
+- approval-outcome records an approve as done only when the review landed on the approved commit (`review_commit_id`, printed by the command).
+
 ## 0.1.0
 
 First version.

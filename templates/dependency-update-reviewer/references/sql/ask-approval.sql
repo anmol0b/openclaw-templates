@@ -2,7 +2,9 @@
 -- This step builds the exact command. Never write a gh write command yourself: show the owner the exact_step it returns, word for word.
 -- comment: write the text to the body_file it names first (drafts/<owner>__<repo>-<number>.md). The text never goes on a command line.
 -- bot-command is only for Dependabot PRs and only posts the fixed comment "@dependabot rebase" or "@dependabot recreate".
--- approve needs a saved review for the current head with verdict looks-safe, and passing CI.
+-- approve needs a saved review for the current head with verdict looks-safe, and passing CI. Its command posts the review through
+-- GitHub's reviews API with commit_id set to the reviewed head, so the approval lands on that exact commit even if the bot pushes
+-- again before it runs. --jq prints the commit the review landed on; pass it to approval-outcome as review_commit_id.
 -- Refuses unless the PR is open and was fetched in the last 15 minutes, so the owner sees it as it is now.
 -- Run from the workspace root:
 --   sqlite3 -bail -json <db_path> ".read references/sql/ask-approval.sql"
@@ -55,7 +57,7 @@ SELECT p.id, a.a,
        CASE a.a WHEN 'comment' THEN p.draft_path ELSE '' END,
        CASE a.a WHEN 'comment' THEN (SELECT hex(sha3(b, 256)) FROM temp.body) ELSE '' END,
        CASE a.a
-         WHEN 'approve' THEN 'gh pr review ' || p.number || ' --repo ' || p.repo || ' --approve'
+         WHEN 'approve' THEN 'gh api -X POST repos/' || p.repo || '/pulls/' || p.number || '/reviews -f event=APPROVE -f commit_id=' || p.head_sha || ' --jq .commit_id'
          WHEN 'comment' THEN 'gh pr comment ' || p.number || ' --repo ' || p.repo || ' --body-file ' || p.draft_path
          WHEN 'bot-command' THEN 'gh pr comment ' || p.number || ' --repo ' || p.repo || ' --body ''@dependabot ' || json_extract(i.j, '$.bot_command') || ''''
        END,

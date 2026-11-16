@@ -57,6 +57,8 @@ A scheduled run ends here. It never runs decide-approval, use-approval or a `gh`
 
 ## Answering requests (in chat, with the owner)
 
+An approve request approves one exact commit: its command passes `commit_id` to GitHub, so a later push by the bot never receives the approval.
+
 The owner answers in chat, for example "approve 12", "approve all the safe ones", "no to 14".
 
 1. A grant must name the request (its approval_id, or a clear group from the latest digest such as "all the approve requests in looks safe"). If it is unclear which requests they mean, ask once.
@@ -64,8 +66,8 @@ The owner answers in chat, for example "approve 12", "approve all the safe ones"
    1. `node references/fetch.mjs <owner/repo>`, then `ingest` (run_id null). This is the fresh read use-approval needs.
    2. `decide-approval` with `granted` and owner_words quoting the owner. If it refuses with `head_changed_since_the_request` or `pr_changed_since_the_request`, withdraw the request, tell the owner what changed, and review the PR again before asking again.
    3. `use-approval` with the exact_step, character for character.
-   4. Run exact_step with exec. OpenClaw asks the owner in its approval prompt as well.
-   5. `node references/fetch.mjs <owner/repo>`, then `ingest`, then `approval-outcome` with `done`, or with `failed` and the exact error line.
+   4. Run exact_step with exec. OpenClaw asks the owner in its approval prompt as well. When you show an approve request, name the repository, the PR number and the full commit SHA it approves.
+   5. `node references/fetch.mjs <owner/repo>`, then `ingest`, then `approval-outcome` with `done` (for approve, add `review_commit_id`: the commit the command printed), or with `failed` and the exact error line. If approval-outcome refuses with `review_not_on_the_approved_commit`, tell the owner at once: the review is on another commit.
 3. For each refused request: `decide-approval` with `refused` and the owner's words.
 4. Report each result in one line: the command, done or failed, and the PR link.
 
