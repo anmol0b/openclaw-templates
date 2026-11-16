@@ -1,0 +1,11 @@
+{
+  "name": "@anmol0b/pr-review-nudger",
+  "version": "0.1.0",
+  "description": "Finds PRs stuck waiting for a review, waiting on their author, or blocked by a merge conflict, suggests a reviewer from CODEOWNERS and your collaborators, and drafts a short nudge. Nothing changes on GitHub until you OK the exact command.",
+  "author": "Anmol Bhardwaj",
+  "license": "MIT",
+  "type": "module",
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

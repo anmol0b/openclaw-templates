@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="PR Review Nudger">
+  <rect width="128" height="128" rx="28" fill="#1f3a4d"/>
+  <circle cx="40" cy="36" r="9" fill="#9aa8bd"/>
+  <circle cx="40" cy="92" r="9" fill="#9aa8bd"/>
+  <circle cx="84" cy="92" r="9" fill="#2e9d5b"/>
+  <path d="M40 45 V83 M84 83 V60 C84 50 76 44 66 44 H58" stroke="#9aa8bd" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M64 36 l-10 8 l10 8" stroke="#9aa8bd" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M90 22 a14 14 0 0 1 14 14 v10 l5 6 h-38 l5 -6 v-10 a14 14 0 0 1 14 -14 z" fill="#e0a43a"/>
+  <circle cx="90" cy="57" r="4" fill="#e0a43a"/>
+</svg>

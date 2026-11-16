@@ -1,0 +1,7 @@
+{
+ "defaultBranchRef": {
+  "name": "main"
+ },
+ "hasIssuesEnabled": true,
+ "nameWithOwner": "example-org/example-repo"
+}

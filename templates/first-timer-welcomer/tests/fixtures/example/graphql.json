@@ -1,0 +1,389 @@
+{
+ "data": {
+  "viewer": {
+   "login": "example-owner"
+  },
+  "repository": {
+   "nameWithOwner": "example-org/example-repo",
+   "hasIssuesEnabled": true,
+   "labels": {
+    "totalCount": 5,
+    "nodes": [
+     {
+      "name": "bug"
+     },
+     {
+      "name": "docs"
+     },
+     {
+      "name": "good first issue"
+     },
+     {
+      "name": "help wanted"
+     },
+     {
+      "name": "wontfix"
+     }
+    ]
+   },
+   "pullRequests": {
+    "totalCount": 7,
+    "nodes": [
+     {
+      "number": 12,
+      "title": "Example PR 12",
+      "url": "https://github.com/example-org/example-repo/pull/12",
+      "createdAt": "2026-11-06T09:00:00Z",
+      "updatedAt": "2026-11-10T12:00:00Z",
+      "isDraft": true,
+      "authorAssociation": "FIRST_TIME_CONTRIBUTOR",
+      "author": {
+       "__typename": "User",
+       "login": "example-newbie-b"
+      },
+      "labels": {
+       "nodes": []
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 11,
+      "title": "Example PR 11",
+      "url": "https://github.com/example-org/example-repo/pull/11",
+      "createdAt": "2026-11-08T09:00:00Z",
+      "updatedAt": "2026-11-09T12:00:00Z",
+      "isDraft": false,
+      "authorAssociation": "NONE",
+      "author": {
+       "__typename": "User",
+       "login": "example-newbie-a"
+      },
+      "labels": {
+       "nodes": []
+      },
+      "comments": {
+       "totalCount": 1,
+       "nodes": [
+        {
+         "viewerDidAuthor": false,
+         "createdAt": "2026-11-09T11:00:00Z"
+        }
+       ]
+      }
+     },
+     {
+      "number": 13,
+      "title": "Example PR 13",
+      "url": "https://github.com/example-org/example-repo/pull/13",
+      "createdAt": "2026-11-07T09:00:00Z",
+      "updatedAt": "2026-11-08T10:00:00Z",
+      "isDraft": false,
+      "authorAssociation": "FIRST_TIMER",
+      "author": {
+       "__typename": "User",
+       "login": "example-newbie-c"
+      },
+      "labels": {
+       "nodes": []
+      },
+      "comments": {
+       "totalCount": 2,
+       "nodes": [
+        {
+         "viewerDidAuthor": false,
+         "createdAt": "2026-11-07T10:00:00Z"
+        },
+        {
+         "viewerDidAuthor": true,
+         "createdAt": "2026-11-08T10:00:00Z"
+        }
+       ]
+      }
+     },
+     {
+      "number": 14,
+      "title": "Example PR 14",
+      "url": "https://github.com/example-org/example-repo/pull/14",
+      "createdAt": "2026-11-05T09:00:00Z",
+      "updatedAt": "2026-11-07T12:00:00Z",
+      "isDraft": false,
+      "authorAssociation": "CONTRIBUTOR",
+      "author": {
+       "__typename": "User",
+       "login": "example-regular"
+      },
+      "labels": {
+       "nodes": []
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 15,
+      "title": "Example PR 15",
+      "url": "https://github.com/example-org/example-repo/pull/15",
+      "createdAt": "2026-11-05T09:00:00Z",
+      "updatedAt": "2026-11-06T12:00:00Z",
+      "isDraft": false,
+      "authorAssociation": "NONE",
+      "author": {
+       "__typename": "Bot",
+       "login": "dependabot"
+      },
+      "labels": {
+       "nodes": [
+        {
+         "name": "dependencies"
+        }
+       ]
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 17,
+      "title": "Example PR 17",
+      "url": "https://github.com/example-org/example-repo/pull/17",
+      "createdAt": "2026-11-04T09:00:00Z",
+      "updatedAt": "2026-11-05T12:00:00Z",
+      "isDraft": false,
+      "authorAssociation": "MEMBER",
+      "author": {
+       "__typename": "User",
+       "login": "example-owner"
+      },
+      "labels": {
+       "nodes": []
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 16,
+      "title": "Example PR 16",
+      "url": "https://github.com/example-org/example-repo/pull/16",
+      "createdAt": "2026-09-20T09:00:00Z",
+      "updatedAt": "2026-11-01T12:00:00Z",
+      "isDraft": false,
+      "authorAssociation": "NONE",
+      "author": {
+       "__typename": "User",
+       "login": "example-newbie-old"
+      },
+      "labels": {
+       "nodes": []
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     }
+    ]
+   },
+   "issues": {
+    "totalCount": 7,
+    "nodes": [
+     {
+      "number": 21,
+      "title": "Example issue 21",
+      "url": "https://github.com/example-org/example-repo/issues/21",
+      "createdAt": "2026-11-09T09:00:00Z",
+      "updatedAt": "2026-11-09T20:00:00Z",
+      "authorAssociation": "NONE",
+      "body": "Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the ",
+      "author": {
+       "__typename": "User",
+       "login": "example-newbie-a"
+      },
+      "assignees": {
+       "totalCount": 0
+      },
+      "labels": {
+       "nodes": []
+      },
+      "closedByPullRequestsReferences": {
+       "totalCount": 0
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 22,
+      "title": "Example issue 22",
+      "url": "https://github.com/example-org/example-repo/issues/22",
+      "createdAt": "2026-10-01T09:00:00Z",
+      "updatedAt": "2026-11-08T12:00:00Z",
+      "authorAssociation": "MEMBER",
+      "body": "Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag.",
+      "author": {
+       "__typename": "User",
+       "login": "example-owner"
+      },
+      "assignees": {
+       "totalCount": 0
+      },
+      "labels": {
+       "nodes": [
+        {
+         "name": "docs"
+        }
+       ]
+      },
+      "closedByPullRequestsReferences": {
+       "totalCount": 0
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 23,
+      "title": "Example issue 23",
+      "url": "https://github.com/example-org/example-repo/issues/23",
+      "createdAt": "2026-10-02T09:00:00Z",
+      "updatedAt": "2026-11-07T12:00:00Z",
+      "authorAssociation": "CONTRIBUTOR",
+      "body": "Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the ",
+      "author": {
+       "__typename": "User",
+       "login": "example-regular"
+      },
+      "assignees": {
+       "totalCount": 1
+      },
+      "labels": {
+       "nodes": []
+      },
+      "closedByPullRequestsReferences": {
+       "totalCount": 0
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 24,
+      "title": "Example issue 24",
+      "url": "https://github.com/example-org/example-repo/issues/24",
+      "createdAt": "2026-10-03T09:00:00Z",
+      "updatedAt": "2026-11-06T12:00:00Z",
+      "authorAssociation": "CONTRIBUTOR",
+      "body": "Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the ",
+      "author": {
+       "__typename": "User",
+       "login": "example-regular"
+      },
+      "assignees": {
+       "totalCount": 0
+      },
+      "labels": {
+       "nodes": []
+      },
+      "closedByPullRequestsReferences": {
+       "totalCount": 1
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 25,
+      "title": "Example issue 25",
+      "url": "https://github.com/example-org/example-repo/issues/25",
+      "createdAt": "2026-10-04T09:00:00Z",
+      "updatedAt": "2026-11-05T12:00:00Z",
+      "authorAssociation": "MEMBER",
+      "body": "Fix typo.",
+      "author": {
+       "__typename": "User",
+       "login": "example-owner"
+      },
+      "assignees": {
+       "totalCount": 0
+      },
+      "labels": {
+       "nodes": []
+      },
+      "closedByPullRequestsReferences": {
+       "totalCount": 0
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 26,
+      "title": "Example issue 26",
+      "url": "https://github.com/example-org/example-repo/issues/26",
+      "createdAt": "2026-10-05T09:00:00Z",
+      "updatedAt": "2026-11-04T12:00:00Z",
+      "authorAssociation": "MEMBER",
+      "body": "Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the ",
+      "author": {
+       "__typename": "User",
+       "login": "example-owner"
+      },
+      "assignees": {
+       "totalCount": 0
+      },
+      "labels": {
+       "nodes": [
+        {
+         "name": "good first issue"
+        },
+        {
+         "name": "docs"
+        }
+       ]
+      },
+      "closedByPullRequestsReferences": {
+       "totalCount": 0
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     },
+     {
+      "number": 27,
+      "title": "Example issue 27",
+      "url": "https://github.com/example-org/example-repo/issues/27",
+      "createdAt": "2026-10-06T09:00:00Z",
+      "updatedAt": "2026-11-03T12:00:00Z",
+      "authorAssociation": "NONE",
+      "body": "Steps to reproduce: run the example command with the flag. Expected the output in the docs; got an error instead. Steps to reproduce: run the example command with the flag. Expected the output in the ",
+      "author": null,
+      "assignees": {
+       "totalCount": 0
+      },
+      "labels": {
+       "nodes": []
+      },
+      "closedByPullRequestsReferences": {
+       "totalCount": 0
+      },
+      "comments": {
+       "totalCount": 0,
+       "nodes": []
+      }
+     }
+    ]
+   }
+  }
+ }
+}

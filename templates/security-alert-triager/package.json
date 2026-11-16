@@ -1,0 +1,11 @@
+{
+  "name": "@anmol0b/security-alert-triager",
+  "version": "0.1.0",
+  "description": "Sorts the Dependabot and code scanning alerts on your repos by severity and package, flags the ones a bot PR already fixes, and says plainly when a repo has alerts turned off or you cannot read them. Dismissals and tracking issues wait for your OK.",
+  "author": "Anmol Bhardwaj",
+  "license": "MIT",
+  "type": "module",
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

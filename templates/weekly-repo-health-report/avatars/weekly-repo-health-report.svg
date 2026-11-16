@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Weekly Repo Health Report">
+  <rect width="128" height="128" rx="28" fill="#1f3a4a"/>
+  <rect x="28" y="70" width="14" height="30" rx="3" fill="#9aa8bd"/>
+  <rect x="50" y="54" width="14" height="46" rx="3" fill="#9aa8bd"/>
+  <rect x="72" y="62" width="14" height="38" rx="3" fill="#9aa8bd"/>
+  <rect x="94" y="40" width="14" height="60" rx="3" fill="#2e9d5b"/>
+  <path d="M26 48 L48 36 L66 44 L100 22" stroke="#e0a43a" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

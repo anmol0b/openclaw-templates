@@ -1,0 +1,5 @@
+# Owners
+* @example-org/core
+/docs/ @kim @carol
+# src/ @notme
+src/ @ivan @-bad @x/y  # trailing
