@@ -1,0 +1,32 @@
+[
+ {
+  "closedAt": "0001-01-01T00:00:00Z",
+  "createdAt": "2026-11-10T00:00:00Z",
+  "number": 601,
+  "state": "OPEN"
+ },
+ {
+  "closedAt": "2026-11-11T00:00:00Z",
+  "createdAt": "2026-11-09T00:00:00Z",
+  "number": 602,
+  "state": "CLOSED"
+ },
+ {
+  "closedAt": "2026-11-14T00:00:00Z",
+  "createdAt": "2026-09-01T00:00:00Z",
+  "number": 603,
+  "state": "CLOSED"
+ },
+ {
+  "closedAt": "0001-01-01T00:00:00Z",
+  "createdAt": "2026-10-01T00:00:00Z",
+  "number": 604,
+  "state": "OPEN"
+ },
+ {
+  "closedAt": "2026-11-02T00:00:00Z",
+  "createdAt": "2026-10-01T00:00:00Z",
+  "number": 605,
+  "state": "CLOSED"
+ }
+]

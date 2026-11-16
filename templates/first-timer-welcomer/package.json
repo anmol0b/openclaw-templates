@@ -1,0 +1,11 @@
+{
+  "name": "@anmol0b/first-timer-welcomer",
+  "version": "0.1.0",
+  "description": "Spots first-time contributors in your repos and issues that suit newcomers, drafts a short welcome and suggests a good-first-issue label. Each person is welcomed once per repo, and nothing changes on GitHub until you OK the exact command.",
+  "author": "Anmol Bhardwaj",
+  "license": "MIT",
+  "type": "module",
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

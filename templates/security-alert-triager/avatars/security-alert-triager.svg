@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Security Alert Triager">
+  <rect width="128" height="128" rx="28" fill="#1f3047"/>
+  <path d="M64 22 L96 34 V62 C96 84 82 100 64 108 C46 100 32 84 32 62 V34 Z" fill="#2a4566" stroke="#9aa8bd" stroke-width="5" stroke-linejoin="round"/>
+  <rect x="48" y="50" width="32" height="7" rx="3.5" fill="#d9534f"/>
+  <rect x="48" y="64" width="24" height="7" rx="3.5" fill="#e0a43a"/>
+  <rect x="48" y="78" width="16" height="7" rx="3.5" fill="#2e9d5b"/>
+</svg>

@@ -1,0 +1,12 @@
+[
+ {
+  "headRefName": "dependabot/npm_and_yarn/lodash-4.17.21",
+  "number": 101,
+  "title": "Bump lodash from 4.17.20 to 4.17.21"
+ },
+ {
+  "headRefName": "dependabot/npm_and_yarn/minimist-1.2.8",
+  "number": 102,
+  "title": "Bump the npm group across 1 directory with 2 updates"
+ }
+]

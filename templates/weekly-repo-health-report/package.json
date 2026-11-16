@@ -1,0 +1,11 @@
+{
+  "name": "@anmol0b/weekly-repo-health-report",
+  "version": "0.1.0",
+  "description": "A read-only weekly health report for your GitHub repos, covering PRs and issues opened and closed, review and merge times, CI pass rate and stale work, with week-over-week changes. It never writes to GitHub.",
+  "author": "Anmol Bhardwaj",
+  "license": "MIT",
+  "type": "module",
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

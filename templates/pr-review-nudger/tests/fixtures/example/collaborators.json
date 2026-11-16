@@ -1,0 +1,72 @@
+[
+ {
+  "login": "example-owner",
+  "id": 1,
+  "type": "User",
+  "site_admin": false,
+  "permissions": {
+   "admin": true,
+   "maintain": false,
+   "pull": true,
+   "push": true,
+   "triage": true
+  },
+  "role_name": "admin"
+ },
+ {
+  "login": "carol",
+  "id": 2,
+  "type": "User",
+  "site_admin": false,
+  "permissions": {
+   "admin": false,
+   "maintain": false,
+   "pull": true,
+   "push": true,
+   "triage": true
+  },
+  "role_name": "write"
+ },
+ {
+  "login": "ivan",
+  "id": 3,
+  "type": "User",
+  "site_admin": false,
+  "permissions": {
+   "admin": false,
+   "maintain": false,
+   "pull": true,
+   "push": true,
+   "triage": true
+  },
+  "role_name": "write"
+ },
+ {
+  "login": "judy",
+  "id": 4,
+  "type": "User",
+  "site_admin": false,
+  "permissions": {
+   "admin": false,
+   "maintain": false,
+   "pull": true,
+   "push": false,
+   "triage": false
+  },
+  "role_name": "read"
+ },
+ {
+  "login": "helper-bot[bot]",
+  "id": 5,
+  "type": "Bot",
+  "site_admin": false,
+  "permissions": {
+   "admin": false,
+   "maintain": false,
+   "pull": true,
+   "push": true,
+   "triage": true
+  },
+  "role_name": "write"
+ }
+]

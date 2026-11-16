@@ -1,0 +1,61 @@
+[
+ {
+  "author": {
+   "id": "U_erin",
+   "is_bot": false,
+   "login": "erin",
+   "name": "Erin Example"
+  },
+  "createdAt": "2026-11-11T00:00:00Z",
+  "isDraft": false,
+  "number": 505,
+  "updatedAt": "2026-11-11T00:00:00Z"
+ },
+ {
+  "author": {
+   "id": "U_grace",
+   "is_bot": false,
+   "login": "grace",
+   "name": "Grace Example"
+  },
+  "createdAt": "2026-10-01T00:00:00Z",
+  "isDraft": false,
+  "number": 507,
+  "updatedAt": "2026-11-10T00:00:00Z"
+ },
+ {
+  "author": {
+   "id": "U_ivan",
+   "is_bot": false,
+   "login": "ivan",
+   "name": "Ivan Example"
+  },
+  "createdAt": "2026-09-01T00:00:00Z",
+  "isDraft": true,
+  "number": 701,
+  "updatedAt": "2026-10-20T00:00:00Z"
+ },
+ {
+  "author": {
+   "id": "U_judy",
+   "is_bot": false,
+   "login": "judy",
+   "name": "Judy Example"
+  },
+  "createdAt": "2026-08-01T00:00:00Z",
+  "isDraft": false,
+  "number": 702,
+  "updatedAt": "2026-09-01T00:00:00Z"
+ },
+ {
+  "author": {
+   "id": "BOT_dependabot",
+   "is_bot": true,
+   "login": "app/dependabot"
+  },
+  "createdAt": "2026-07-01T00:00:00Z",
+  "isDraft": false,
+  "number": 703,
+  "updatedAt": "2026-08-01T00:00:00Z"
+ }
+]
