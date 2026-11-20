@@ -29,6 +29,14 @@ All of them follow the same rules:
 - Every GitHub write is a request you approve in chat for an exact command the database builds from checked values. It is tied to what you saw and used once. Scheduled runs never write. Weekly Repo Health Report never writes to GitHub at all.
 - Each Template's README has an "Untrusted text" section listing exactly which GitHub text reaches the model and how much.
 
+## Avatars
+
+Every Template's avatar and ClawHub icon is a Blobster. The design files are in `blobsters/`. To change one, edit its JSON and render it again:
+
+```sh
+openclaw agents render-blobster blobsters/<name>.json --out templates/<name>/avatars/<name>.svg
+```
+
 ## Check a Template locally
 
 You need OpenClaw with the `templates` command, Node 22 or newer, and sqlite3 3.38 or newer with FTS5 (the stock macOS sqlite3 has it).

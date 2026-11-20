@@ -1,7 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Security Alert Triager">
-  <rect width="128" height="128" rx="28" fill="#1f3047"/>
-  <path d="M64 22 L96 34 V62 C96 84 82 100 64 108 C46 100 32 84 32 62 V34 Z" fill="#2a4566" stroke="#9aa8bd" stroke-width="5" stroke-linejoin="round"/>
-  <rect x="48" y="50" width="32" height="7" rx="3.5" fill="#d9534f"/>
-  <rect x="48" y="64" width="24" height="7" rx="3.5" fill="#e0a43a"/>
-  <rect x="48" y="78" width="16" height="7" rx="3.5" fill="#2e9d5b"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="-12 -18 144 144" role="img">
+<metadata>MIT License
+
+Copyright (c) 2026 OpenClaw Foundation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</metadata>
+<title>Security Alert Triager</title><desc>A blue Blobster in a guard vest holding a golden shield.</desc>
+<defs><clipPath id="blobster-body-clip"><path d="M60 8 C32 8 16 32 16 52 C16 72 30 90 44 95 L44 104 L54 104 L54 96 C58 97.5 62 97.5 66 96 L66 104 L76 104 L76 95 C90 90 104 72 104 52 C104 32 88 8 60 8 Z"/></clipPath></defs>
+<g stroke="#3b6ea8" stroke-width="4" stroke-linecap="round" fill="none"><path d="M46 14 Q38 4 31 7"/><path d="M74 14 Q82 4 89 7"/></g>
+<g><path d="M6 12 L20 17 L20 34 Q20 48 6 56 Q-8 48 -8 34 L-8 17 Z" fill="#f2c94c" stroke="#8a6d1a" stroke-width="2"></path><circle cx="6" cy="30" r="4" fill="#3a2f0b"></circle><rect x="4.5" y="32" width="3" height="8" fill="#3a2f0b"></rect><path d="M20 42 C5 37 0 47 5 57 C10 67 20 62 25 52 C28 45 25 42 20 42 Z" fill="#285185"/></g>
+<g><path d="M100 42 C115 37 120 47 115 57 C110 67 100 62 95 52 C92 45 95 42 100 42 Z" fill="#285185"/></g>
+<path d="M60 8 C32 8 16 32 16 52 C16 72 30 90 44 95 L44 104 L54 104 L54 96 C58 97.5 62 97.5 66 96 L66 104 L76 104 L76 95 C90 90 104 72 104 52 C104 32 88 8 60 8 Z" fill="#3b6ea8"/>
+<g clip-path="url(#blobster-body-clip)"><path d="M18 52 Q60 62 102 52 L102 100 L18 100 Z" fill="#1b2433"></path><path d="M18 74 Q60 84 102 74 L102 80 Q60 90 18 80 Z" fill="#f5c542"></path></g>
+<ellipse cx="48" cy="28" rx="20" ry="11" fill="#ffffff" opacity="0.1"/>
+<g></g>
+<g><circle cx="45" cy="32" r="5.5" fill="#0a1014"/><circle cx="75" cy="32" r="5.5" fill="#0a1014"/><circle cx="46.5" cy="30.5" r="2.2" fill="#e1ecff"/><circle cx="76.5" cy="30.5" r="2.2" fill="#e1ecff"/></g>
 </svg>

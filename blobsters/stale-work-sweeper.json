@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "stale-work-sweeper",
+  "name": "Stale Work Sweeper",
+  "description": "An orange Blobster in a work apron sweeping with a broom.",
+  "palette": {
+    "shell": "#e07b39",
+    "claw": "#b05a22",
+    "glint": "#fff3e6"
+  },
+  "layers": {
+    "back": "",
+    "left_prop": "<path d=\"M24 22 L8 72\" fill=\"none\" stroke=\"#8a5a2b\" stroke-width=\"4\" stroke-linecap=\"round\"/><polygon points=\"0,68 16,73 10,94 -8,88\" fill=\"#e8c35a\"/>",
+    "right_prop": "",
+    "shell_overlay": "<path d=\"M35 49 L46 49 L47 60 L73 60 L74 49 L85 49 L90 86 Q60 103 30 86 Z\" fill=\"#f1e4c4\"/><path d=\"M49 69 H71 V83 Q60 88 49 83 Z\" fill=\"#638d69\"/>",
+    "accessory": ""
+  }
+}

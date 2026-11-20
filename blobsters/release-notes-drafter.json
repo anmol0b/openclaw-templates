@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "release-notes-drafter",
+  "name": "Release Notes Drafter",
+  "description": "A violet Blobster in a yellow scarf holding a pencil.",
+  "palette": {
+    "shell": "#5b5bd6",
+    "claw": "#4040a8",
+    "glint": "#eeeeff"
+  },
+  "layers": {
+    "back": "",
+    "left_prop": "",
+    "right_prop": "<rect x=\"105\" y=\"18\" width=\"8\" height=\"38\" fill=\"#f5c542\"/><polygon points=\"105,18 113,18 109,8\" fill=\"#f1d9b5\"/><polygon points=\"107.6,12 110.4,12 109,8\" fill=\"#333333\"/><rect x=\"105\" y=\"54\" width=\"8\" height=\"5\" fill=\"#e88a9a\"/>",
+    "shell_overlay": "<path d=\"M18 50 Q60 66 102 50 L102 60 Q60 76 18 60 Z\" fill=\"#f5c542\"/>",
+    "accessory": ""
+  }
+}

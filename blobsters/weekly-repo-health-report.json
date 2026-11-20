@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "weekly-repo-health-report",
+  "name": "Weekly Repo Health Report",
+  "description": "A sky-blue Blobster in a white coat holding a rising bar chart.",
+  "palette": {
+    "shell": "#2a8fbd",
+    "claw": "#1d6d93",
+    "glint": "#e8f7ff"
+  },
+  "layers": {
+    "back": "",
+    "left_prop": "<path d=\"M12 38 L16 50\" fill=\"none\" stroke=\"#4a5568\" stroke-width=\"3\" stroke-linecap=\"round\"/><rect x=\"-8\" y=\"8\" width=\"30\" height=\"30\" rx=\"3\" fill=\"#ffffff\" stroke=\"#4a5568\" stroke-width=\"2\"/><rect x=\"-3\" y=\"26\" width=\"5\" height=\"8\" fill=\"#3c9d6b\"/><rect x=\"4\" y=\"20\" width=\"5\" height=\"14\" fill=\"#3c9d6b\"/><rect x=\"11\" y=\"14\" width=\"5\" height=\"20\" fill=\"#3c9d6b\"/>",
+    "right_prop": "",
+    "shell_overlay": "<path d=\"M18 50 Q60 60 102 50 L102 100 L18 100 Z\" fill=\"#f4f6fa\"/><path d=\"M60 60 L46 51 M60 60 L74 51\" fill=\"none\" stroke=\"#c5ccd6\" stroke-width=\"3\" stroke-linecap=\"round\"/><circle cx=\"60\" cy=\"72\" r=\"2.5\" fill=\"#9aa8bd\"/><circle cx=\"60\" cy=\"84\" r=\"2.5\" fill=\"#9aa8bd\"/>",
+    "accessory": ""
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "pr-review-nudger",
+  "name": "PR Review Nudger",
+  "description": "A purple Blobster in a dark sweater ringing a bell.",
+  "palette": {
+    "shell": "#8a5cc2",
+    "claw": "#67419a",
+    "glint": "#f4ecff"
+  },
+  "layers": {
+    "back": "",
+    "left_prop": "",
+    "right_prop": "<path d=\"M104 52 L110 40\" fill=\"none\" stroke=\"#9a7a12\" stroke-width=\"3\" stroke-linecap=\"round\"/><path d=\"M104 36 Q104 18 114 18 Q124 18 124 36 L127 40 L101 40 Z\" fill=\"#f5c542\" stroke=\"#9a7a12\" stroke-width=\"2\"/><circle cx=\"114\" cy=\"43\" r=\"3\" fill=\"#9a7a12\"/>",
+    "shell_overlay": "<path d=\"M18 52 Q60 62 102 52 L102 100 L18 100 Z\" fill=\"#2b2140\"/>",
+    "accessory": ""
+  }
+}

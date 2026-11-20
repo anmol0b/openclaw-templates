@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- The avatar and catalog icon is now a Blobster rendered with `openclaw agents render-blobster`. Its design is in `blobsters/repo-maintainer-helper.json` at the repository root.
+
 ## 0.1.0
 
 First version.

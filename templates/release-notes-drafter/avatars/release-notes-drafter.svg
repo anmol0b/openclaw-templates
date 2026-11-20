@@ -1,10 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Release Notes Drafter">
-  <rect width="128" height="128" rx="28" fill="#2b3a55"/>
-  <path d="M36 28h44l14 14v58a6 6 0 0 1-6 6H36a6 6 0 0 1-6-6V34a6 6 0 0 1 6-6z" fill="#f4f6fa"/>
-  <path d="M80 28v14h14" fill="#d5dbe6"/>
-  <rect x="40" y="52" width="40" height="6" rx="3" fill="#7b8aa5"/>
-  <rect x="40" y="66" width="32" height="6" rx="3" fill="#9aa8bd"/>
-  <rect x="40" y="80" width="36" height="6" rx="3" fill="#9aa8bd"/>
-  <circle cx="88" cy="88" r="14" fill="#3c9d6b"/>
-  <path d="M82 88l4 4 8-8" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="-12 -18 144 144" role="img">
+<metadata>MIT License
+
+Copyright (c) 2026 OpenClaw Foundation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</metadata>
+<title>Release Notes Drafter</title><desc>A violet Blobster in a yellow scarf holding a pencil.</desc>
+<defs><clipPath id="blobster-body-clip"><path d="M60 8 C32 8 16 32 16 52 C16 72 30 90 44 95 L44 104 L54 104 L54 96 C58 97.5 62 97.5 66 96 L66 104 L76 104 L76 95 C90 90 104 72 104 52 C104 32 88 8 60 8 Z"/></clipPath></defs>
+<g stroke="#5b5bd6" stroke-width="4" stroke-linecap="round" fill="none"><path d="M46 14 Q38 4 31 7"/><path d="M74 14 Q82 4 89 7"/></g>
+<g><path d="M20 42 C5 37 0 47 5 57 C10 67 20 62 25 52 C28 45 25 42 20 42 Z" fill="#4040a8"/></g>
+<g><rect x="105" y="18" width="8" height="38" fill="#f5c542"></rect><polygon points="105,18 113,18 109,8" fill="#f1d9b5"></polygon><polygon points="107.6,12 110.4,12 109,8" fill="#333333"></polygon><rect x="105" y="54" width="8" height="5" fill="#e88a9a"></rect><path d="M100 42 C115 37 120 47 115 57 C110 67 100 62 95 52 C92 45 95 42 100 42 Z" fill="#4040a8"/></g>
+<path d="M60 8 C32 8 16 32 16 52 C16 72 30 90 44 95 L44 104 L54 104 L54 96 C58 97.5 62 97.5 66 96 L66 104 L76 104 L76 95 C90 90 104 72 104 52 C104 32 88 8 60 8 Z" fill="#5b5bd6"/>
+<g clip-path="url(#blobster-body-clip)"><path d="M18 50 Q60 66 102 50 L102 60 Q60 76 18 60 Z" fill="#f5c542"></path></g>
+<ellipse cx="48" cy="28" rx="20" ry="11" fill="#ffffff" opacity="0.1"/>
+<g></g>
+<g><circle cx="45" cy="32" r="5.5" fill="#0a1014"/><circle cx="75" cy="32" r="5.5" fill="#0a1014"/><circle cx="46.5" cy="30.5" r="2.2" fill="#eeeeff"/><circle cx="76.5" cy="30.5" r="2.2" fill="#eeeeff"/></g>
 </svg>

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "security-alert-triager",
+  "name": "Security Alert Triager",
+  "description": "A blue Blobster in a guard vest holding a golden shield.",
+  "palette": {
+    "shell": "#3b6ea8",
+    "claw": "#285185",
+    "glint": "#e1ecff"
+  },
+  "layers": {
+    "back": "",
+    "left_prop": "<path d=\"M6 12 L20 17 L20 34 Q20 48 6 56 Q-8 48 -8 34 L-8 17 Z\" fill=\"#f2c94c\" stroke=\"#8a6d1a\" stroke-width=\"2\"/><circle cx=\"6\" cy=\"30\" r=\"4\" fill=\"#3a2f0b\"/><rect x=\"4.5\" y=\"32\" width=\"3\" height=\"8\" fill=\"#3a2f0b\"/>",
+    "right_prop": "",
+    "shell_overlay": "<path d=\"M18 52 Q60 62 102 52 L102 100 L18 100 Z\" fill=\"#1b2433\"/><path d=\"M18 74 Q60 84 102 74 L102 80 Q60 90 18 80 Z\" fill=\"#f5c542\"/>",
+    "accessory": ""
+  }
+}
