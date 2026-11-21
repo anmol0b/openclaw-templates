@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "first-timer-welcomer",
+  "name": "First-Timer Welcomer",
+  "description": "A pink Blobster in a bow tie holding a welcome balloon.",
+  "palette": {
+    "shell": "#e0577d",
+    "claw": "#b23f60",
+    "glint": "#fff0f4"
+  },
+  "layers": {
+    "back": "",
+    "left_prop": "",
+    "right_prop": "<path d=\"M104 54 Q110 44 113 32\" fill=\"none\" stroke=\"#6b6b6b\" stroke-width=\"1.5\"/><ellipse cx=\"114\" cy=\"18\" rx=\"11\" ry=\"13\" fill=\"#f5c542\"/><polygon points=\"112,31 116,31 114,34\" fill=\"#d9a514\"/><ellipse cx=\"110\" cy=\"13\" rx=\"3\" ry=\"4\" fill=\"#fff4c8\"/>",
+    "shell_overlay": "<polygon points=\"46,52 60,58 46,64\" fill=\"#2b2140\"/><polygon points=\"74,52 60,58 74,64\" fill=\"#2b2140\"/><circle cx=\"60\" cy=\"58\" r=\"3.5\" fill=\"#463863\"/>",
+    "accessory": ""
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "ci-failure-triager",
+  "name": "CI Failure Triager",
+  "description": "A red Blobster in a yellow hard hat inspecting a failure with a magnifying glass.",
+  "palette": {
+    "shell": "#d6533c",
+    "claw": "#a83a28",
+    "glint": "#fff1ec"
+  },
+  "layers": {
+    "back": "",
+    "left_prop": "",
+    "right_prop": "<path d=\"M103 54 L110 36\" fill=\"none\" stroke=\"#5a4630\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"114\" cy=\"26\" r=\"10\" fill=\"#d8f0ff\" stroke=\"#3a3f4a\" stroke-width=\"3\"/>",
+    "shell_overlay": "",
+    "accessory": "<path d=\"M42 10 Q60 -10 78 10 Z\" fill=\"#f5c542\"/><rect x=\"38\" y=\"8\" width=\"44\" height=\"5\" rx=\"2.5\" fill=\"#d9a514\"/>"
+  }
+}

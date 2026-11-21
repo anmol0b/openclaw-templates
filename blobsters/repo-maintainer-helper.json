@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "repo-maintainer-helper",
+  "name": "Repo Maintainer Helper",
+  "description": "A teal Blobster in a dark work vest holding a wrench.",
+  "palette": {
+    "shell": "#2f8f8a",
+    "claw": "#1f6b67",
+    "glint": "#e6fffb"
+  },
+  "layers": {
+    "back": "",
+    "left_prop": "",
+    "right_prop": "<path d=\"M103 54 L114 26\" fill=\"none\" stroke=\"#6b7480\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"116\" cy=\"20\" r=\"8\" fill=\"#8a939e\"/><circle cx=\"119\" cy=\"15\" r=\"3.5\" fill=\"#4a525c\"/>",
+    "shell_overlay": "<path d=\"M18 52 Q60 62 102 52 L102 100 L18 100 Z\" fill=\"#24323f\"/><circle cx=\"76\" cy=\"68\" r=\"4\" fill=\"#f5c542\"/>",
+    "accessory": ""
+  }
+}

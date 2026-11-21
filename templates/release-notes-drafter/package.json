@@ -1,6 +1,6 @@
 {
   "name": "@anmol0b/release-notes-drafter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Drafts release notes from the pull requests merged since your last release, proposes the next version, and creates a draft GitHub release only after you OK the exact command. Never publishes.",
   "author": "Anmol Bhardwaj",
   "license": "MIT",

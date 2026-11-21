@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- The avatar and catalog icon is now a Blobster rendered with `openclaw agents render-blobster`. Its design is in `blobsters/stale-work-sweeper.json` at the repository root.
+
 ## 0.1.0
 
 First version.

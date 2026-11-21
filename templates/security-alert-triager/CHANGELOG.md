@@ -4,6 +4,8 @@
 
 First version.
 
+- The avatar and catalog icon is a Blobster rendered with `openclaw agents render-blobster`.
+
 - A paused weekday automation reads up to 10 repositories with one fixed read-only command each (`node references/fetch.mjs <owner/repo>`): open and recently dismissed Dependabot and code scanning alerts, and the open Dependabot and Renovate PRs.
 - Each source is reported as having alerts, having none, turned off, or not readable with this login, using the messages GitHub returns. Setup stops when the login cannot read a repository's alerts.
 - One digest: Dependabot alerts grouped by package and code scanning alerts grouped by rule, most severe first, with the bot PR that already fixes a Dependabot alert (or does not reach the patched version).

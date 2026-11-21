@@ -1,6 +1,6 @@
 {
   "name": "@anmol0b/ci-failure-triager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sorts failed GitHub Actions runs on the repos you list into flaky, new break or still broken, groups repeats, points at the first bad commit, and drafts reruns and issues in a daily digest. Nothing changes on GitHub until you OK the exact command.",
   "author": "Anmol Bhardwaj",
   "license": "MIT",
