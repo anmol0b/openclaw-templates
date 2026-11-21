@@ -51,6 +51,8 @@ workspace:
       path: templates/report.md
     - source: avatars/weekly-repo-health-report.svg
       path: avatars/weekly-repo-health-report.svg
+    - source: assets/icon.png
+      path: assets/icon.png
     - source: README.md
       path: docs/README.md
     - source: CHANGELOG.md

@@ -65,6 +65,8 @@ workspace:
       path: templates/digest.md
     - source: avatars/repo-maintainer-helper.svg
       path: avatars/repo-maintainer-helper.svg
+    - source: assets/icon.png
+      path: assets/icon.png
     - source: README.md
       path: docs/README.md
     - source: CHANGELOG.md

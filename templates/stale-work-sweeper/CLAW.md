@@ -61,6 +61,8 @@ workspace:
       path: templates/digest.md
     - source: avatars/stale-work-sweeper.svg
       path: avatars/stale-work-sweeper.svg
+    - source: assets/icon.png
+      path: assets/icon.png
     - source: README.md
       path: docs/README.md
     - source: CHANGELOG.md

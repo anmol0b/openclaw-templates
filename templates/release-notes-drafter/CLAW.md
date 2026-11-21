@@ -65,6 +65,8 @@ workspace:
       path: templates/release-notes.md
     - source: avatars/release-notes-drafter.svg
       path: avatars/release-notes-drafter.svg
+    - source: assets/icon.png
+      path: assets/icon.png
     - source: README.md
       path: docs/README.md
     - source: CHANGELOG.md

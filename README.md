@@ -35,7 +35,10 @@ Every Template's avatar and ClawHub icon is a Blobster. The design files are in 
 
 ```sh
 openclaw agents render-blobster blobsters/<name>.json --out templates/<name>/avatars/<name>.svg
+openclaw agents render-blobster blobsters/<name>.json --out templates/<name>/assets/icon.png
 ```
+
+The SVG is the agent's avatar. ClawHub uses `assets/icon.png` as the catalog icon, because it does not build one from the Blobster SVG.
 
 ## Check a Template locally
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Ships the Blobster as `assets/icon.png` so ClawHub shows it as the catalog icon. ClawHub does not build an icon from the Blobster SVG.
+
 ## 0.1.1
 
 - The avatar and catalog icon is now a Blobster rendered with `openclaw agents render-blobster`. Its design is in `blobsters/ci-failure-triager.json` at the repository root.
