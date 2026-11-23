@@ -20,7 +20,7 @@ MERGED_SHA="$(sqlite3 "$DB" "SELECT head_oid FROM items WHERE id=$MERGED;")"
 
 # delete-branch: the command is built here, only for a merged branch with a plain name.
 ask $MERGED delete-branch
-expect_has "delete-branch builds the exact command" "\"exact_step\":\"gh api -X DELETE repos/$R/git/refs/heads/feature/merged-old\""
+expect_has "delete-branch builds the exact command, bound to the seen head" "\"exact_step\":\"node references/delete-branch.mjs $R feature/merged-old $MERGED_SHA\""
 A_DEL="$(aid)"
 ask $MERGED delete-branch; expect_fail "one open request per item and action"
 ask $SQUASH delete-branch; expect_has "a squash-merged branch can be deleted" '"action":"delete-branch"'
@@ -75,9 +75,9 @@ q "UPDATE approvals SET exact_step = 'gh repo delete $R --yes' WHERE id=$A_DEL;"
 
 # use: the branch head must not have moved.
 use() { step use-approval '{"step":"use-approval","approval_id":'$1',"exact_step":"'$2'"}'; }
-DEL_STEP="gh api -X DELETE repos/$R/git/refs/heads/feature/merged-old"
+DEL_STEP="node references/delete-branch.mjs $R feature/merged-old $MERGED_SHA"
 use $A_COMMENT "gh pr comment 201 --repo $R --body-file $DRAFT"; expect_refused approval_not_granted_or_already_used "use refuses a request that was not granted"
-use $A_DEL "gh api -X DELETE repos/$R/git/refs/heads/main"; expect_refused not_the_approved_command "use refuses a different command"
+use $A_DEL "node references/delete-branch.mjs $R main $MERGED_SHA"; expect_refused not_the_approved_command "use refuses a different command"
 q "UPDATE items SET last_seen = strftime('%Y-%m-%dT%H:%M:%SZ','now','-11 minutes') WHERE id=$MERGED;"
 use $A_DEL "$DEL_STEP"; expect_refused fetch_again_first "use needs a fetch from the last 10 minutes"
 node -e 'const fs=require("fs"),f=process.argv[1];const j=JSON.parse(fs.readFileSync(f));const n=j.data.repository.refs.nodes.find(n=>n.name==="feature/merged-old");n.target.oid="f".repeat(40);fs.writeFileSync(f,JSON.stringify(j))' "$D/branches.json"

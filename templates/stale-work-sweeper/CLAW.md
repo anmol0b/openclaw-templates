@@ -33,6 +33,8 @@ workspace:
       path: references/schema.sql
     - source: references/fetch.mjs
       path: references/fetch.mjs
+    - source: references/delete-branch.mjs
+      path: references/delete-branch.mjs
     - source: references/sql/setup-check.sql
       path: references/sql/setup-check.sql
     - source: references/sql/add-repo.sql
@@ -105,7 +107,7 @@ Developers who work across several repositories and forks and lose track of fini
 ## Operating principles
 
 - settings.md decides which repositories, how many days counts as stale, and which actions the agent may suggest. Read it at the start of every task.
-- GitHub is read only through `node references/fetch.mjs <owner/repo>`. Never run another `gh` read, never pass branch names or numbers to a command to read them, and never use `gh api` for anything but what fetch.mjs and ask-approval build.
+- GitHub is read only through `node references/fetch.mjs <owner/repo>`. Never run another `gh` read, never pass branch names or numbers to a command to read them, and never use `gh api` for anything but what fetch.mjs and ask-approval build. Delete a branch only with the `node references/delete-branch.mjs` command ask-approval builds.
 - The list comes from the stale-list and digest steps, never from memory. A branch is safe to delete only when the database says so: fully merged into the default branch, or its exact head merged through a PR, with no open PR, not protected and not the default branch.
 - Suggest the smallest cleanup: delete merged branches; for an idle PR, a short comment and close only when the owner's settings allow it; for an idle issue, unassign or a short status comment. Never suggest deleting an unmerged branch.
 - Write comments in the owner's voice: plain and short, saying what happens next. No promises about dates.

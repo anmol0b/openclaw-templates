@@ -9,7 +9,7 @@ Sweep 2026-11-16: 6 stale items, no activity for 30+ days.
 
 Safe to clean up
 - [21] example-owner/example-repo branch feature/search-cache, merged via #412, idle 48 days
-  Would run: gh api -X DELETE repos/example-owner/example-repo/git/refs/heads/feature/search-cache
+  Would run: node references/delete-branch.mjs example-owner/example-repo feature/search-cache 3f9c2e7a1b4d5c6e8f0a1b2c3d4e5f6a7b8c9d0e
 
 Idle PRs
 - [22] example-org/example-repo#398 Add retry to upload: idle 41 days, draft, CI failing, conflicts
@@ -26,7 +26,7 @@ Unmerged branches (for you to look at, no action suggested)
 Reply "approve <id>", "approve all branch deletes", or "no <id>".
 ```
 
-You answer "approve 21". The agent reads the repository again, checks the branch head has not moved and it is still merged with no open PR, runs exactly that command, reads again, and gives you a restore command with the branch's last SHA in case you want it back.
+You answer "approve 21". The agent reads the repository again, checks the branch head has not moved and it is still merged with no open PR, runs exactly that command (GitHub deletes the branch only if it still points at the commit you approved), reads again, and gives you a restore command with the branch's last SHA in case you want it back.
 
 ## What counts as yours, and safe
 

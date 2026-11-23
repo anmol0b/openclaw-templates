@@ -1,7 +1,8 @@
 -- Ask the owner for one write to GitHub. Input: item_id, action, close_reason (close on an issue: completed or not planned).
 -- Actions by kind: branch: delete-branch. pr: comment, close. issue: comment, close, unassign.
 -- This step builds the exact command. Never write a gh write command yourself: show the owner the exact_step it returns, word for word.
--- delete-branch: only a merged branch (category merged-branch) with a plain name; the command is `gh api -X DELETE .../git/refs/heads/<branch>`.
+-- delete-branch: only a merged branch (category merged-branch) with a plain name; the command is
+-- `node references/delete-branch.mjs <owner/repo> <branch> <sha>`, which deletes the branch only if it still points at that SHA.
 -- comment: write the text to the body_file it names first (drafts/<owner>__<repo>-<number>.md). The text never goes on a command line.
 -- Refuses unless the item is the owner's, still open, and was fetched in the last 15 minutes.
 -- Run from the workspace root:
@@ -74,7 +75,7 @@ SELECT t.id, a.a, coalesce(json_extract(i.j, '$.close_reason'), ''),
        CASE a.a WHEN 'comment' THEN t.draft_path ELSE '' END,
        CASE a.a WHEN 'comment' THEN (SELECT hex(sha3(b, 256)) FROM temp.body) ELSE '' END,
        CASE a.a
-         WHEN 'delete-branch' THEN 'gh api -X DELETE repos/' || t.repo || '/git/refs/heads/' || t.ref
+         WHEN 'delete-branch' THEN 'node references/delete-branch.mjs ' || t.repo || ' ' || t.ref || ' ' || t.head_oid
          WHEN 'comment' THEN 'gh ' || t.cli || ' comment ' || t.number || ' --repo ' || t.repo || ' --body-file ' || t.draft_path
          WHEN 'close' THEN 'gh ' || t.cli || ' close ' || t.number || ' --repo ' || t.repo ||
               CASE WHEN t.kind = 'issue' THEN ' --reason ''' || json_extract(i.j, '$.close_reason') || '''' ELSE '' END

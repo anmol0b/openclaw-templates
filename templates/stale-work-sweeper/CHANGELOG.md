@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Deleting a merged branch now runs `node references/delete-branch.mjs <owner/repo> <branch> <sha>`. GitHub deletes the branch only if it still points at the commit you approved, so a push after your approval makes the delete fail and keeps the branch. Before, the delete was `gh api -X DELETE`, which removed the branch whatever its head was by then.
+
 ## 0.1.2
 
 - Ships the Blobster as `assets/icon.png` so ClawHub shows it as the catalog icon. ClawHub does not build an icon from the Blobster SVG.

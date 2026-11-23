@@ -45,7 +45,7 @@ The first line runs this agent's commands on the Gateway host, where this worksp
 
 Tell the owner:
 - Choose "Always allow here" for these, and only these: `node references/fetch.mjs <owner/repo>` for each repository, and each packaged step, `sqlite3 -bail -json "<db_path>" ".read references/sql/<step>.sql"` (and the digest's form without `-json`). They read GitHub or the local database and never write to GitHub.
-- Never choose "Always allow" for a command that writes: `gh api -X DELETE ...`, `gh pr comment`, `gh pr close`, `gh issue comment`, `gh issue close`, `gh issue edit`, or any other sqlite3 command. Approve those once each, after the agent's request in chat.
+- Never choose "Always allow" for a command that writes: `node references/delete-branch.mjs ...`, `gh pr comment`, `gh pr close`, `gh issue comment`, `gh issue close`, `gh issue edit`, or any other sqlite3 command. Approve those once each, after the agent's request in chat.
 - Approval prompts show only in the Control UI chat for this agent or a chat channel with exec approvals. Scheduled runs need the fetch and SQL commands allowed first, or they stop at the first prompt.
 
 ## Tools
